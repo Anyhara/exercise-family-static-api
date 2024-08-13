@@ -48,7 +48,7 @@ def get_member(member_id):
 @app.route('/member', methods=['POST'])
 def add_member():
 
-    request_data = request.get_json
+    request_data = request.get_json()
     added_member = {
     "first_name": request_data['first_name'],
     "age": request_data['age'],
